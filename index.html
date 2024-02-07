@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="decod.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@600 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <script src="app.js"></script>
+</head>
+
+<body background="1">
+
+    <header class="container-nav">
+        <div class="interface">
+            <div class="logo">
+                <img src="./image/Logo.png" alt="DecoCrypt">
+                <ul>
+                    <li>Deco<span>Crypt</span></li>
+                </ul>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="javascript:void(0);" onclick="scrollToAnchor('contato')">Contato</a></li>
+                </ul>
+            </nav>
+        </div> <!--interface-->
+    </header>
+
+    <main>
+        <section class="Topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="container">
+                        <div class="txt-fixo">
+                            <h1>Deco<span>Crypt</span></h1>
+                            <p>Desvende o futuro da segurança: DecoCrypt suas mensagens e proteja suas informações com
+                                confiança.</p>
+                            <div class="btn-codificar">
+                                <a href="javascript:void(0);" onclick="scrollToAnchor('secaoCodificar')">
+                                    <button>Codificar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--container-->
+                </div>
+                <div class="">
+                    <div class="imgRobo">
+                        <img src="./image/robo-invert.png" alt="Robo">
+                    </div> <!--celular-->
+
+                </div>
+            </div><!--interface-->
+        </section><!--topo-->
+
+        <section id="secaoCodificar" class="Sobre hidden-content">
+            <div class="flex__container-input">
+                <div class="container-input">
+                    <div class="btn-text">
+                        <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+                    </div><!--botão text-->
+                    <div class="viewText">
+                        <p></p>
+                    </div>
+                </div>
+
+                <p class="main__paragraph">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </p>
+
+                <div class="container-btn">
+                    <button class="btn-Criptografar" onclick="criptografar()">
+                        <span class="fa fa-lock" aria-hidden="true"></span>
+                        <span>Criptografar</span>
+
+                        <button class="btn-Descriptografar"  onclick="descriptografar()">
+                            <span class="fa fa-unlock" aria-hidden="true"></span>
+                            <span>Descriptografar</span>
+                </div>
+                <aside class="aside__main">
+                    <div class="aside-container">
+                        <div class="conteudo-aside">
+                            <img src="./image/roboCard.png" alt="RoboCard">
+                            <h2 class="titulo__aside">Nenhuma mensagem encontrada.</h1>
+                            <p class="subtitulo__aside">Digite o texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                        <button class="aside__button_copy" onclick="copiarTexto()">
+                            <span class="fa fa-copy" aria-hidden="true"></span>
+                            <span>Copiar</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="contato">
+        <div class="txt-fixo-footer">
+            <h4>Contato</h4>
+            <div class="container-footer">
+                <p>
+                    Estudante de software Full Stack apaixonado pelo mundo da tecnologia, prática no design e
+                    implementação de soluções web robustas, escaláveis ​​e inovadoras. Hábil em aproveitar um
+                    conjunto abrangente de habilidades que abrange tecnologias front-end e back-end.
+                </p>
+            </div>
+            <div class="container-email">
+                <img src="./image/Email Icon.png" alt="minhasRedes">
+                <p> deassispessoal@gmail.com </p>
+            </div> <!--container-email-->
+            <div class="container-redes-footer">
+                <a href="https://www.linkedin.com/in/matheusassisdev/">
+                <img src="./image/Linkedin-footer.png" alt="minhasRedes">
+                </a>
+                <a href="https://github.com/M4THEUSDev">
+                <img src="./image/GitHub-Footer.png" alt="minhasRedes">
+                </a>
+            </div> <!--container-email-->
+        </div><!--txt-fixo-footer-->
+    </footer>
+</body>
+
+</html>
