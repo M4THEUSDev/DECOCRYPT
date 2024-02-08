@@ -44,6 +44,7 @@ function criptografar() {
     // Verificar se o texto contém caracteres ou letras maiúsculas
     if (/[^a-z ]/.test(textoOriginal)) {
         alert("Digite apenas letras minúsculas sem acentos.");
+        limparCampo(); // Limpar campo se houver caracteres não permitidos
     } else {
         // Se não houver caracteres ou letras maiúsculas, prosseguir com a criptografia
         var textoCriptografado = aplicarCriptografia(textoOriginal, true);
@@ -54,10 +55,14 @@ function criptografar() {
     }
 }
 
+function limparCampo(){
+    document.getElementById('inputText').value = '';
+}
+
 // Função para descriptografar
 function descriptografar() {
     var textoCriptografado = document.getElementById("inputText").value;
-
+    limparCampo(); // Limpar campo se houver caracteres não permitidos
     // Verificar se o texto contém apenas letras minúsculas e espaços
     if (/[^a-z ]/.test(textoCriptografado)) {
         alert("Texto criptografado inválido. Digite apenas letras minúsculas e sem acentos.");
@@ -117,3 +122,5 @@ function copiarTexto() {
     // Exibir uma mensagem de sucesso (opcional)
     alert("Texto copiado para a área de transferência!");
 }
+
+
